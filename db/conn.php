@@ -1,8 +1,16 @@
 <?php
-    $host = 'localhost'; // 127.0.0.1
-    $db = 'attendance_db';
-    $user = 'root';
-    $pass = '';
+    // Development Connection
+    // $host = 'localhost'; // 127.0.0.1
+    // $db = 'attendance_db';
+    // $user = 'root';
+    // $pass = '';
+    // $charset = 'utf8mb4';
+
+    // Remote Database Conncection
+    $host = 'sql6.freesqldatabase.com'; // 127.0.0.1
+    $db = 'sql6495616';
+    $user = 'sql6495616';
+    $pass = 'y94PZy5Xrh';
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
