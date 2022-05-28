@@ -1,6 +1,7 @@
 <?php
         $title = "View Attendee Detail";
         require_once 'includes/header.php';
+        require_once 'includes/auth_check.php';
         require_once 'db/conn.php';
         // get attendee detail by id
         if(!isset($_GET['id'])){
@@ -14,7 +15,9 @@
         
 ?>
 <br>
-
+<div>
+    <img src="<?php echo empty($result['avatar_path'])? 'uploads/default_avatar.png' : $result['avatar_path'] ?>" width=20%, height=20% class = 'rounded-circle'>
+</div>
 <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">

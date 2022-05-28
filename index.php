@@ -15,7 +15,7 @@
         -expertise
         -phone
     -->
-    <form method="post" action="success.php">
+    <form method="post" action="success.php" enctype="multipart/form-data">
         <div class="mb-3">
             <label for="firstName" class="form-label">First Name</label>
             <input required type="text" class="form-control" id="firstName" name="firstName" >
@@ -48,10 +48,22 @@
             <input required type="text" class="form-control" id="phone" name="phone" >
             <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
         </div>
+        <div class="mb-3 custom-file">
+        <label class='custom-file-label form-label' for ='avatar' > Choose File </label>
+            <input  type="file" accept='image/*' class="custom-file-input" id="avatar" name="avatar" >
+            
+            <div id='avatar' class='form-text text-danger'> File Upload is Optional </div>
+            
+        </div>
+
         <div class="d-grid gap-2">
         <button type="submit" name="submit" class="btn btn-primary">Submit</button>
         </div>
     </form>
+            <br>
+    <div class="text-primary">
+        For testing purpose , use username = admin , password = password.
+    </div>
 
     <br>
     <?php
